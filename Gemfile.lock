@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    qunitizer (0.0.1)
+    qunit-rails (0.0.1)
       railties (~> 3.2.3)
 
 GEM
@@ -58,4 +58,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  qunitizer!
+  qunit-rails!
