@@ -80,23 +80,23 @@ directives to include the right css files:
      *= require_tree .
     */
 
-### Run Tests
+## Run Tests
 
-#### Start server
+### Start server
 
-Now start the server:
+Start the server to run the tests:
 
     rails s
 
 Go to `http://localhost:3000/qunit` to see the QUnit Test Runner.
 
-#### From the CLI
+### From the CLI
 
-**COMING SOON*
+**COMING SOON**
 
-#### Autotest
+### Autotest
 
-**COMING SOON*
+**COMING SOON**
 
 ## License
 
