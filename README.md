@@ -24,3 +24,7 @@ The generator will create two directories with two files inside your `test` fold
 
     test/javascripts/test_helper.js
     test/stylesheets/test_helper.css
+
+## License
+
+MIT License. Copyright 2012 Francesco Rodriguez. [http://www.frodsan.com]
