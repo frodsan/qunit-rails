@@ -1,4 +1,4 @@
-module QUnit
+module Qunit
   module Rails
     VERSION = '0.0.1'
   end

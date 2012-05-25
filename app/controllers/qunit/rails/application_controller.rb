@@ -1,4 +1,4 @@
-module QUnit
+module Qunit
   module Rails
     class ApplicationController < ActionController::Base
     end

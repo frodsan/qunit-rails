@@ -2,12 +2,12 @@ require File.expand_path('../lib/qunit/rails/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name           = 'qunit-rails'
-  gem.version        = QUnit::Rails::VERSION
+  gem.version        = Qunit::Rails::VERSION
 
   gem.authors        = ['Francesco Rodriguez']
   gem.email          = ['lrodriguezsanc@gmail.com']
   gem.homepage       = 'https://github.com/frodsan/qunit-rails'
-  gem.summary        = 'QUnit for Rails 3.2+'
+  gem.summary        = 'Qunit for Rails 3.2+'
   gem.description    = 'Support for the Rails 3.2 asset pipeline'
 
   gem.files          = `git ls-files`.split($\)
