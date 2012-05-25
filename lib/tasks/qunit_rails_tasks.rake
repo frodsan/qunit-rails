@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :qunitizer do
+# task :qunit-rails do
 #   # Task goes here
 # end
