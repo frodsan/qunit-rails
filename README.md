@@ -15,10 +15,10 @@ QUnit on Rails works with Rails 3.2.  You can add it to your Gemfile with:
       gem 'qunit-rails'
     end
 
-The engine is automatically mounted into your application in the development
-and test environments.
-
 Run the bundle command to install it.
+
+**The engine is automatically mounted into your application in the development
+and test environments.**
 
 After you install it and add it to your Gemfile, you need to run the install
 generator:
@@ -40,7 +40,8 @@ The file `test/javascripts/test_helper.js` has the following content:
     //= require_tree .
 
 This loads all the javascripts defined in `app/assets/javascripts/application.js`.
-Also, this pulls in all your test files from the `javascripts` folder into QUnit:
+Also, this pulls in all your test files from the `javascripts` folder into
+*QUnit-Rails*:
 
     test/javascripts/*_test.js
     test/javascripts/*_test.js.coffee
@@ -54,9 +55,10 @@ Here's an example `test/javascripts/foo_test.js`:
       equal(foo.truth, true, 'foo.truth is not true');
     });
 
-If you're not comfortable with loading all the javascript defined in the `application.js`
-manifest file, you can delete `//= require application` from `test_helper.js` and use
-the `require` dependency mechanisms in your tests to pull the dependencies. Here's an example
+If you're not comfortable with loading all the javascript defined in the
+`application.js` manifest file, you can delete `//= require application`
+from the `test_helper.js` file and use the `require` dependency mechanism
+in your tests to pull the dependencies. Here's an example
 `test/javascripts/foo_test.js`:
 
     //= require foo
@@ -69,13 +71,32 @@ the `require` dependency mechanisms in your tests to pull the dependencies. Here
 
 ### Stylesheets
 
-For including stylesheets in your tests, **QUnit-Rails** uses `test/javascripts/test_helper.css`.
-Use [Sprockets](https://github.com/sstephenson/sprockets) directives to include the right css files:
+For including stylesheets in your tests, *QUnit-Rails* uses
+`test/javascripts/test_helper.css`. Use [Sprockets](https://github.com/sstephenson/sprockets)
+directives to include the right css files:
 
     /*
      *= require application
      *= require_tree .
     */
+
+### Run Tests
+
+#### Start server
+
+Now start the server:
+
+    rails s
+
+Go to `http://localhost:3000/qunit` to see the QUnit Test Runner.
+
+#### From the CLI
+
+**COMING SOON*
+
+#### Autotest
+
+**COMING SOON*
 
 ## License
 
