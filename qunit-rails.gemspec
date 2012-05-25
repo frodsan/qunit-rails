@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.email          = ['lrodriguezsanc@gmail.com']
   gem.homepage       = 'https://github.com/frodsan/qunit-rails'
   gem.summary        = 'Qunit for Rails 3.2+'
-  gem.description    = 'Support for the Rails 3.2 asset pipeline'
+  gem.description    = 'QUnit for Rails 3.2+'
 
   gem.files          = `git ls-files`.split($\)
   gem.require_paths  = ['lib']
