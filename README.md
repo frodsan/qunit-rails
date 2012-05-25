@@ -27,4 +27,4 @@ The generator will create two directories with two files inside your `test` fold
 
 ## License
 
-MIT License. Copyright 2012 Francesco Rodriguez. [http://www.frodsan.com]
+MIT License. Copyright 2012 Francesco Rodriguez. <http://www.frodsan.com>
