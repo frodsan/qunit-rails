@@ -92,11 +92,11 @@ Go to `http://localhost:3000/qunit` to see the QUnit Test Runner.
 
 ### From the CLI
 
-**COMING SOON**
+<strong style="color:red;">COMING SOON</strong>
 
 ### Autotest
 
-**COMING SOON**
+<strong style="color:red;">COMING SOON</strong>
 
 ## License
 
