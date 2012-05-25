@@ -98,6 +98,10 @@ Go to `http://localhost:3000/qunit` to see the QUnit Test Runner.
 
 [COMING SOON](/)
 
+## What's next?
+
+Profit.
+
 ## License
 
 MIT License. Copyright 2012 Francesco Rodriguez. <http://www.frodsan.com>
