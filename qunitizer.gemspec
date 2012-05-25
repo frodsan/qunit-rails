@@ -2,7 +2,7 @@ require File.expand_path("../lib/qunitizer/version", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name           = "qunitizer"
-  gem.version        = Qunitizer::VERSION
+  gem.version        = QUnitizer::VERSION
 
   gem.authors        = ["Francesco Rodriguez"]
   gem.email          = ["lrodriguezsanc@gmail.com"]

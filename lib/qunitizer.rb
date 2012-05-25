@@ -1,2 +1,2 @@
-module Qunitizer
+module QUnitizer
 end
