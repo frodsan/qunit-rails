@@ -41,7 +41,7 @@ This will generate a `test_helper.js.coffe` file instead of `test_helper.js`.
 
 ### JavaScript/CoffeeScript Tests
 
-The file `test/javascripts/test_helper.js` has the following content:
+The `test/javascripts/test_helper.js` file has the following content:
 
     //= require application
     //= require_tree .
