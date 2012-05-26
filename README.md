@@ -65,9 +65,10 @@ Here's an example `test/javascripts/foo_test.js`:
 
 If you're not comfortable with loading all the javascript defined in the
 `application.js` manifest file, you can delete `//= require application`
-from the `test_helper.js` file or `#= require application` from the 
-`test_helper.js.coffee`and use the `require` dependency mechanism in your
-tests to pull the dependencies. Here's an example `test/javascripts/foo_test.js`:
+from `test_helper.js` or `#= require application` from `test_helper.js.coffee`
+and use the `require` dependency mechanism in your tests to pull the dependencies.
+
+Here's an example `test/javascripts/foo_test.js`:
 
     //= require foo
 
