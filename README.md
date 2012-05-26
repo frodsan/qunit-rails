@@ -25,23 +25,31 @@ generator:
 
     rails g qunit:install
 
-The generator will create two directories with two files inside your `test` folder:
+The generator by default will create two directories with two files inside
+your `test` folder:
 
     test/javascripts/test_helper.js
     test/stylesheets/test_helper.css
 
+If you prefer *CoffeeScript*, you can run:
+
+    rails g qunit:install -c
+
+This will generate a `test_helper.js.coffe` file instead of `test_helper.js`.
+
 ## Usage
 
-### JavaScripts
+### JavaScript/CoffeeScript Tests
 
 The file `test/javascripts/test_helper.js` has the following content:
 
     //= require application
     //= require_tree .
+    //= require_self
 
 This loads all the javascripts defined in `app/assets/javascripts/application.js`.
 Also, this pulls in all your test files from the `javascripts` folder into
-*QUnit-Rails*:
+**QUnit-Rails**:
 
     test/javascripts/*_test.js
     test/javascripts/*_test.js.coffee
@@ -57,9 +65,9 @@ Here's an example `test/javascripts/foo_test.js`:
 
 If you're not comfortable with loading all the javascript defined in the
 `application.js` manifest file, you can delete `//= require application`
-from the `test_helper.js` file and use the `require` dependency mechanism
-in your tests to pull the dependencies. Here's an example
-`test/javascripts/foo_test.js`:
+from the `test_helper.js` file or `#= require application` from the 
+`test_helper.js.coffee`and use the `require` dependency mechanism in your
+tests to pull the dependencies. Here's an example `test/javascripts/foo_test.js`:
 
     //= require foo
 
@@ -71,7 +79,7 @@ in your tests to pull the dependencies. Here's an example
 
 ### Stylesheets
 
-For including stylesheets in your tests, *QUnit-Rails* uses
+For including stylesheets in your tests, **QUnit-Rails** uses
 `test/javascripts/test_helper.css`. Use [Sprockets](https://github.com/sstephenson/sprockets)
 directives to include the right css files:
 
