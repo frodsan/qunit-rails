@@ -1,5 +1,5 @@
 Qunit::Rails::Engine.routes.draw do
-  root to: 'test#index'
+  root :to => 'test#index'
 end
 
 Rails.application.routes.draw do
