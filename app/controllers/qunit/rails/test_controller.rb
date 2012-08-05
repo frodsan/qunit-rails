@@ -1,6 +1,6 @@
 module Qunit
   module Rails
-    class TestController < Qunit::Rails::ApplicationController
+    class TestController < ActionController::Base
       layout false
 
       def index
