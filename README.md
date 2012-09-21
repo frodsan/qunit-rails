@@ -89,7 +89,7 @@ directives to include the right css files:
      *= require_tree .
     */
 
-## Overriding `index.html`
+### Overriding `index.html`
 
 You can set your own custom Test Runner, by overriding
 the default `index.html.erb`. Create a new file in
