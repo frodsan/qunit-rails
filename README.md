@@ -117,11 +117,11 @@ Go to `http://localhost:3000/qunit` to see the QUnit Test Runner.
 
 ### From the CLI
 
-[COMING SOON](/)
+[Eventually](/)
 
 ### Autotest
 
-[COMING SOON](/)
+[Eventually](/)
 
 ## What's next?
 
