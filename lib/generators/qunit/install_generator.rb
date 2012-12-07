@@ -15,7 +15,7 @@ module Qunit
         if !options[:coffee]
           template 'test_helper.js',  'test/javascripts/test_helper.js'
         else
-          template 'test_helper.js.coffee', 'test/javascripts/test_helpers.js.coffee'
+          template 'test_helper.js.coffee', 'test/javascripts/test_helper.js.coffee'
         end
 
         template 'test_helper.css', 'test/stylesheets/test_helper.css'
