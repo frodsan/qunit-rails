@@ -1,15 +1,18 @@
-# QUnit on Rails
+QUnit on Rails
+==============
 
 QUnit JavaScript Unit Testing framework for Rails.
 
-## Requirements
+Requirements
+------------
 
 * Ruby 1.9.x
 * Rails 3.2+
 
-## Getting Started
+Getting Started
+---------------
 
-QUnit on Rails works with Rails 3.2.  You can add it to your Gemfile with:
+QUnit on Rails works with Rails 3.2. You can add it to your Gemfile with:
 
     group :development, :test do
       gem 'qunit-rails'
@@ -35,7 +38,7 @@ If you prefer *CoffeeScript*, you can run:
 
     rails g qunit:install -c
 
-This will generate a `test_helper.js.coffe` file instead of `test_helper.js`.
+This will generate a `test_helper.coffe` file instead of `test_helper.js`.
 
 ## Usage
 
@@ -52,6 +55,7 @@ Also, this pulls in all your test files from the `javascripts` folder into
 **QUnit-Rails**:
 
     test/javascripts/*_test.js
+    test/javascripts/*_test.coffee
     test/javascripts/*_test.js.coffee
     test/javascripts/*_test.js.erb
 
@@ -65,7 +69,7 @@ Here's an example `test/javascripts/foo_test.js`:
 
 If you're not comfortable with loading all the javascript defined in the
 `application.js` manifest file, you can delete `//= require application`
-from `test_helper.js` or `#= require application` from `test_helper.js.coffee`
+from `test_helper.js` or `#= require application` from `test_helper.coffee`
 and use the `require` dependency mechanism in your tests to pull the dependencies.
 
 Here's an example `test/javascripts/foo_test.js`:
