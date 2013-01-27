@@ -1,9 +1,9 @@
-module QUnit
+module Qunit
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
       source_root File.expand_path('../../templates', __FILE__)
 
-      desc 'Setup QUnit into test'
+      desc 'Setup Qunit into test'
 
       class_option :coffee, type: :boolean, aliases: '-c', default: false,
                    desc: 'Support for CoffeeScript'

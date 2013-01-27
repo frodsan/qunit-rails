@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors        = ['Francesco Rodriguez']
   gem.email          = ['lrodriguezsanc@gmail.com']
   gem.homepage       = 'https://github.com/frodsan/qunit-rails'
-  gem.summary        = 'QUnit for Rails 3.2+'
+  gem.summary        = 'Qunit for Rails 3.2+'
   gem.description    = gem.summary
 
   gem.files            = `git ls-files`.split($\)

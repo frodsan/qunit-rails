@@ -1,7 +1,7 @@
-QUnit::Rails::Engine.routes.draw do
+Qunit::Rails::Engine.routes.draw do
   root to: 'test#index'
 end
 
 Rails.application.routes.draw do
-  mount QUnit::Rails::Engine => '/qunit'
+  mount Qunit::Rails::Engine => '/qunit'
 end
