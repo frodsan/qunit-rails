@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name           = 'qunit-rails'
-  gem.version        = '0.0.2'
+  gem.version        = '0.0.3'
 
   gem.authors        = ['Francesco Rodriguez']
   gem.email          = ['lrodriguezsanc@gmail.com']
