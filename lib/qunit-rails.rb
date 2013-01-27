@@ -1,6 +1,6 @@
 require 'qunit/rails/engine'
 
-module Qunit
+module QUnit
   module Rails
   end
 end
