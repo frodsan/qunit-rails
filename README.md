@@ -38,7 +38,7 @@ If you prefer *CoffeeScript*, you can run:
 
     rails g qunit:install -c
 
-This will generate a `test_helper.coffe` file instead of `test_helper.js`.
+This will generate a `test_helper.coffee` file instead of `test_helper.js`.
 
 ## Usage
 
