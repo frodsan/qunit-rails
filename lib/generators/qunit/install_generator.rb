@@ -20,12 +20,12 @@ module Qunit
 
       def create_javascript_file
         empty_directory "#{dir}/javascripts"
-        template "test_helper.#{extension}", "#{dir}/javascripts/#{dir}_helper.#{extension}"
+        template "test_helper.#{extension}", "#{dir}/javascripts/test_helper.#{extension}"
       end
 
       def create_stylesheets_file
         empty_directory "#{dir}/stylesheets"
-        template 'test_helper.css', "#{dir}/stylesheets/#{dir}_helper.css"
+        template 'test_helper.css', "#{dir}/stylesheets/test_helper.css"
       end
 
       def create_initializer_file
