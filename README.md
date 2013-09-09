@@ -28,17 +28,38 @@ generator:
 
     rails g qunit:install
 
-The generator by default will create two directories with two files inside
-your `test` folder:
+The generator by default will create one initializer and two directories with two
+files inside your `test` folder:
 
     test/javascripts/test_helper.js
     test/stylesheets/test_helper.css
+    config/initializers/qunit-rails.rb
+
+If you want to specify the spec folder name, for example 'spec' you can run:
+
+    rails g qunit:install --dir="spec"
+
+This will create two files in the specified directory and qunit initializer:
+
+    spec/javascripts/test_helper.js
+    spec/stylesheets/test_helper.css
+    config/initializers/qunit-rails.rb
 
 If you prefer *CoffeeScript*, you can run:
 
     rails g qunit:install -c
 
 This will generate a `test_helper.coffee` file instead of `test_helper.js`.
+
+You can pass the two options, run:
+
+    rails g qunit:install --dir="spec" -c
+
+This will generate this structure:
+
+    spec/javascripts/test_helper.coffee
+    spec/stylesheets/test_helper.css
+    config/initializers/qunit-rails.rb
 
 ## Usage
 
