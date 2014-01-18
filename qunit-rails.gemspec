@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Francesco Rodriguez"]
   s.email       = ["lrodriguezsanc@gmail.com"]
   s.homepage    = "https://github.com/frodsan/qunit-rails"
-  s.summary     = "Qunit for Rails."
+  s.summary     = "QUnit for Rails."
   s.description = s.summary
   s.license     = "Unlicense"
 
