@@ -15,7 +15,7 @@ Getting Started
 QUnit on Rails works with Rails 3.2. You can add it to your Gemfile with:
 
     group :development, :test do
-      gem 'qunit-rails'
+      gem "qunit-rails"
     end
 
 Run the bundle command to install it.
@@ -61,10 +61,10 @@ Also, this pulls in all your test files from the `javascripts` folder into
 
 Here's an example `test/javascripts/foo_test.js`:
 
-    test('Foo always says the truth', function() {
+    test("Foo always says the truth", function() {
       foo = new Foo();
 
-      equal(foo.truth, true, 'foo.truth is not true');
+      equal(foo.truth, true, "foo.truth is not true");
     });
 
 If you're not comfortable with loading all the javascript defined in the
@@ -76,10 +76,10 @@ Here's an example `test/javascripts/foo_test.js`:
 
     //= require foo
 
-    test('Foo always says the truth', function() {
+    test("Foo always says the truth", function() {
       foo = new Foo();
 
-      equal(foo.truth, true, 'foo.truth is not true');
+      equal(foo.truth, true, "foo.truth is not true");
     });
 
 ### Stylesheets
