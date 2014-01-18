@@ -3,20 +3,16 @@ QUnit on Rails
 
 QUnit JavaScript Unit Testing framework for Rails.
 
-Requirements
-------------
-
-* Ruby 1.9.x
-* Rails 3.2+
-
 Getting Started
 ---------------
 
 QUnit on Rails works with Rails 3.2. You can add it to your Gemfile with:
 
-    group :development, :test do
-      gem "qunit-rails"
-    end
+```ruby
+group :development, :test do
+  gem "qunit-rails"
+end
+```
 
 Run the bundle command to install it.
 
@@ -117,20 +113,4 @@ Start the server to run the tests:
 
     rails s
 
-Go to `http://localhost:3000/qunit` to see the QUnit Test Runner.
-
-### From the CLI
-
-[Eventually](/)
-
-### Autotest
-
-[Eventually](/)
-
-## What's next?
-
-Profit.
-
-## License
-
-MIT License. Copyright 2012 Francesco Rodriguez. <http://www.frodsan.com>
+Go to http://localhost:3000/qunit to see the QUnit Test Runner.
