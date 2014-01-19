@@ -1,4 +1,4 @@
-0.0.5 (unreleased)
+0.0.5
 -----
 
 * Add custom name support for test folders.
