@@ -36,15 +36,18 @@ If you prefer *CoffeeScript*, you can run:
 
 This will generate a `test_helper.coffee` file instead of `test_helper.js`.
 
-## Usage
+Usage
+-----
 
 ### JavaScript/CoffeeScript Tests
 
 The `test/javascripts/test_helper.js` file has the following content:
 
-    //= require application
-    //= require_tree .
-    //= require_self
+```javascript
+//= require application
+//= require_tree .
+//= require_self
+```
 
 This loads all the javascripts defined in `app/assets/javascripts/application.js`.
 Also, this pulls in all your test files from the `javascripts` folder into
@@ -57,11 +60,13 @@ Also, this pulls in all your test files from the `javascripts` folder into
 
 Here's an example `test/javascripts/foo_test.js`:
 
-    test("Foo always says the truth", function() {
-      foo = new Foo();
+```javascript
+test("Foo always says the truth", function() {
+  foo = new Foo();
 
-      equal(foo.truth, true, "foo.truth is not true");
-    });
+  equal(foo.truth, true, "foo.truth is not true");
+});
+```
 
 If you're not comfortable with loading all the javascript defined in the
 `application.js` manifest file, you can delete `//= require application`
@@ -70,42 +75,49 @@ and use the `require` dependency mechanism in your tests to pull the dependencie
 
 Here's an example `test/javascripts/foo_test.js`:
 
-    //= require foo
+```javascript
+//= require foo
 
-    test("Foo always says the truth", function() {
-      foo = new Foo();
+test("Foo always says the truth", function() {
+  foo = new Foo();
 
-      equal(foo.truth, true, "foo.truth is not true");
-    });
+  equal(foo.truth, true, "foo.truth is not true");
+});
+```
 
 ### Stylesheets
 
-For including stylesheets in your tests, **QUnit-Rails** uses
-`test/javascripts/test_helper.css`. Use [Sprockets](https://github.com/sstephenson/sprockets)
+For including stylesheets in your tests, It uses
+`test/javascripts/test_helper.css`. Use [Sprockets][sprockets]
 directives to include the right css files:
 
-    /*
-     *= require application
-     *= require_tree .
-    */
+```css
+/*
+ *= require application
+ *= require_tree .
+*/
+```
 
-### Overriding `index.html`
+### Overriding `index.html`
 
 You can set your own custom Test Runner, by overriding
 the default `index.html.erb`. Create a new file in
 `app/views/qunit/rails/test/index.html.erb` and edit it
 whichever you prefer:
 
-    <html>
-      <head>
-        <title>My Custom Test Runner</title>
-      </head>
-      <body>
-        <h1>My Custom Test Runner</h1>
-      </body>
-    </html>
+```html
+<html>
+  <head>
+    <title>My Custom Test Runner</title>
+  </head>
+  <body>
+    <h1>My Custom Test Runner</h1>
+  </body>
+</html>
+```
 
-## Run Tests
+Run Tests
+---------
 
 ### Start server
 
@@ -113,4 +125,6 @@ Start the server to run the tests:
 
     rails s
 
-Go to http://localhost:3000/qunit to see the QUnit Test Runner.
+Go to <http://localhost:3000/qunit> to see the QUnit Test Runner.
+
+[sprockets]: https://github.com/sstephenson/sprockets)
