@@ -14,10 +14,8 @@ group :development, :test do
 end
 ```
 
-Run the bundle command to install it.
-
-**The engine is automatically mounted into your application in the development
-and test environments.**
+Run the bundle command to install it. The engine is automatically mounted
+into your application in the development and test environments.
 
 After you install it and add it to your Gemfile, you need to run the install
 generator:
@@ -30,9 +28,26 @@ your `test` folder:
     test/javascripts/test_helper.js
     test/stylesheets/test_helper.css
 
-If you prefer *CoffeeScript*, you can run:
+If you want to specify a custom folder name for the tests and the test helpers,
+you'll need to change the `qunit.tests_path` option in `config/environments/development.rb`
+file:
 
-    rails g qunit:install -c
+```ruby
+App::Application.configure do
+  ...
+
+  config.qunit.tests_path = "spec"
+end
+```
+
+Then, this is the result if you run `rails g qunit:install`:
+
+    spec/javascripts/test_helper.js
+    spec/stylesheets/test_helper.js
+
+If you prefer CoffeeScript, you can run:
+
+    rails g qunit:install -j coffee
 
 This will generate a `test_helper.coffee` file instead of `test_helper.js`.
 
