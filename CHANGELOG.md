@@ -1,3 +1,8 @@
+0.0.6
+-----
+
+* Fix `QUnit::Rails::TestController` namespace issue.
+
 0.0.5
 -----
 
