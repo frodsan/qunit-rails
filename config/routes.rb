@@ -4,7 +4,7 @@ QUnit::Rails::Engine.routes.draw do
 end
 
 Rails.application.routes.draw do
-  unless Rails.application.routes.named_routes.routes[:qunit_rails]
+  unless Rails.application.routes.named_routes.routes[:q_unit_rails]
     mount QUnit::Rails::Engine => "/qunit"
   end
 end
