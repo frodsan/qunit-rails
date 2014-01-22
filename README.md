@@ -117,7 +117,7 @@ directives to include the right css files:
 
 You can set your own custom Test Runner, by overriding
 the default `index.html.erb`. Create a new file in
-`app/views/qunit/rails/test/index.html.erb` and edit it
+`app/views/q_unit/rails/test/index.html.erb` and edit it
 whichever you prefer:
 
 ```html
