@@ -131,6 +131,13 @@ whichever you prefer:
 </html>
 ```
 
+### Clearing the session
+If you'd like to clear the session every time the qunit index page loads you can set in your config:
+```ruby
+config.qunit.reset_password = true
+```
+Disabled by default.
+
 Run Tests
 ---------
 
