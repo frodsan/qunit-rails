@@ -1,7 +1,7 @@
 module QUnit
   module Rails
     class TestController < ActionController::Base
-      after_action :clear_session
+      before_action :clear_session
 
       layout false
 
