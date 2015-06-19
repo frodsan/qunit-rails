@@ -6,6 +6,8 @@ QUnit JavaScript Unit Testing framework for Rails.
 Getting Started
 ---------------
 
+Qunit version 1.18.0
+
 QUnit on Rails works with Rails 3.2. You can add it to your Gemfile with:
 
 ```ruby
